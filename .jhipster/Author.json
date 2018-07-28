@@ -1,0 +1,33 @@
+{
+    "name": "Author",
+    "fields": [
+        {
+            "fieldName": "writerName",
+            "javadoc": "Author name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "writerBook",
+            "javadoc": "some write book",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "book",
+            "otherEntityName": "book",
+            "otherEntityRelationshipName": "writer"
+        }
+    ],
+    "changelogDate": "20180728093118",
+    "javadoc": "作者entity",
+    "entityTableName": "author",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

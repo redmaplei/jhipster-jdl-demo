@@ -1,0 +1,16 @@
+
+/** 书 */
+entity Book {
+	bookName String /** book name */
+    writerName String /** author */
+}
+
+/**   作者entity   */
+entity Author {
+	writerName String /** Author name */
+    writerBook String /** some write book */
+}
+
+relationship OneToMany {
+	Author {book} to Book {writer(writerName) required}
+}
